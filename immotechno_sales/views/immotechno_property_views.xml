@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_immotechno_property_form" model="ir.ui.view">
+            <field name="name">view.immotechno.property.view.form</field>
+            <field name="model">immotechno.property</field>
+            <field name="inherit_id" ref="immotechno_property.immotechno_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='status']" position = 'attributes'>
+                    <attribute name="options">{'clickable': False}</attribute>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="view_immotechno_property_form_button" model="ir.ui.view">
+            <field name="name">view.immotechno.property.view.form</field>
+            <field name="model">immotechno.property</field>
+            <field name="inherit_id" ref="immotechno_property.immotechno_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button name="action_view_sale_order"
+                            type="object"
+                            class="oe_stat_button"
+                            invisible="sale_count == 0"
+                            icon="fa-money">
+                        <field name="sale_count" string='Sale Order' widget="statinfo"/>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

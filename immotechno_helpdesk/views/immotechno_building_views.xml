@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_building_form_inherit" model="ir.ui.view">
+        <field name="name">building.form.inherit</field>
+        <field name="model">building</field>
+        <field name="inherit_id" ref="immotechno_property.view_building_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='smart']" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_view_building"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-wrench">
+                        <field name="building_count" string='Equipment' widget="statinfo"/>
+                    </button>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

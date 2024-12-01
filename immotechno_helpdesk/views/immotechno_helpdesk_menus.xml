@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <menuitem id="immotechno_helpdesk_menu_root"
+              name="Help"
+              web_icon="immotechno_helpdesk,static/description/icon.png"
+              groups="base.group_user"
+              sequence="1"/>
+    </data>
+</odoo>

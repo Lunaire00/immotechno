@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="property1" model="immotechno.property">
+            <field name="name">House Benito</field>
+            <field name="street">Rue de la fabrique</field>
+            <field name="city">Paris</field>
+            <field name="zip">75000</field>
+            <field name="country_id" ref="base.fr"/>
+            <field name="parking">True</field>
+            <field name="type_property_id" ref="property_type_0"/>
+            <field name="type_building_id" ref="building_0"/>
+            <field name="type_room_id" ref="room_type_1"/>
+            <field name="estimated_value">1000000.0</field>
+            <field name="status">available</field>
+            <field name="surface">100</field>
+            <field name="price">500000.0</field>
+            <field name="adress">Adresse 1</field>
+            <field name="is_pet_allowed">True</field>
+            <field name="has_elevator">True</field>
+            <field name="energy_rating">A</field>
+            <field name="heating_type">electric</field>
+            <field name="construction_year">2005</field>
+            <field name="number_of_floors">5</field>
+            <field name="has_pool">True</field>
+            <field name="has_terrace">True</field>
+            <field name="has_garden">True</field>
+            <field name="has_basement">False</field>
+            <field name="has_attic">True</field>
+            <field name="living_room_area">35</field>
+            <field name="kitchen_area">15</field>
+            <field name="is_kitchen_equipped">True</field>
+            <field name="garden_area">50</field>
+            <field name="main_floor_type">parquet</field>
+            <field name="interior_finish">premium</field>
+            <field name="exterior_finish">brick</field>
+            <field name="window_quality">double</field>
+            <field name="thermal_insulation">good</field>
+            <field name="flooring_finish">tiles</field>
+            <field name="is_furnished">True</field>
+            <field name="photo" type="base64" file="immotechno_property/static/img/propertyone.jpg"/>
+        </record>
+
+        <record id="property2" model="immotechno.property">
+            <field name="name">House White</field>
+            <field name="street">Rue de Mons</field>
+            <field name="city">Lyon</field>
+            <field name="zip">69000</field>
+            <field name="country_id" ref="base.fr"/>
+            <field name="parking">True</field>
+            <field name="type_property_id" ref="property_type_0"/>
+            <field name="type_building_id" ref="building_1"/>
+            <field name="type_room_id" ref="room_type_4"/>
+            <field name="estimated_value">1200000.0</field>
+            <field name="status">available</field>
+            <field name="surface">110</field>
+            <field name="price">600000.0</field>
+            <field name="adress">Adresse 2</field>
+            <field name="is_pet_allowed">False</field>
+            <field name="has_elevator">False</field>
+            <field name="energy_rating">B</field>
+            <field name="heating_type">gas</field>
+            <field name="construction_year">2010</field>
+            <field name="number_of_floors">3</field>
+            <field name="has_pool">False</field>
+            <field name="has_terrace">False</field>
+            <field name="has_garden">True</field>
+            <field name="has_basement">True</field>
+            <field name="has_attic">False</field>
+            <field name="living_room_area">40</field>
+            <field name="kitchen_area">18</field>
+            <field name="is_kitchen_equipped">True</field>
+            <field name="garden_area">30</field>
+            <field name="main_floor_type">carpet</field>
+            <field name="interior_finish">standard</field>
+            <field name="exterior_finish">concrete</field>
+            <field name="window_quality">single</field>
+            <field name="thermal_insulation">average</field>
+            <field name="flooring_finish">parquet</field>
+            <field name="is_furnished">False</field>
+            <field name="photo" type="base64" file="immotechno_property/static/img/propertytwo.jpg"/>
+        </record>
+
+        <record id="property3" model="immotechno.property">
+            <field name="name">House Hobbit</field>
+            <field name="street">Route de la campagne</field>
+            <field name="city">Saint-Étienne</field>
+            <field name="zip">42000</field>
+            <field name="country_id" ref="base.fr"/>
+            <field name="parking">True</field>
+            <field name="type_property_id" ref="property_type_0"/>
+            <field name="type_building_id" ref="building_2"/>
+            <field name="type_room_id" ref="room_type_4"/>
+            <field name="estimated_value">800000.0</field>
+            <field name="status">available</field>
+            <field name="surface">180</field>
+            <field name="price">750000.0</field>
+            <field name="adress">Adresse Maison de Campagne</field>
+            <field name="is_pet_allowed">True</field>
+            <field name="has_elevator">False</field>
+            <field name="energy_rating">C</field>
+            <field name="heating_type">wood</field>
+            <field name="construction_year">1995</field>
+            <field name="number_of_floors">2</field>
+            <field name="has_pool">False</field>
+            <field name="has_terrace">True</field>
+            <field name="has_garden">True</field>
+            <field name="has_basement">True</field>
+            <field name="has_attic">True</field> 
+            <field name="living_room_area">50</field>
+            <field name="kitchen_area">30</field>
+            <field name="is_kitchen_equipped">True</field>
+            <field name="garden_area">200</field> 
+            <field name="main_floor_type">carpet</field> 
+            <field name="interior_finish">standard</field> 
+            <field name="exterior_finish">concrete</field>
+            <field name="window_quality">double</field>
+            <field name="thermal_insulation">good</field> 
+            <field name="flooring_finish">tiles</field>
+            <field name="is_furnished">True</field> 
+            <field name="photo" type="base64" file="immotechno_property/static/img/propertythree.jpg"/>
+        </record>
+
+        <record id="property4" model="immotechno.property">
+            <field name="name">Appart de Jo</field>
+            <field name="street">Route de la campagne</field>
+            <field name="city">Saint-Étienne</field>
+            <field name="zip">42000</field>
+            <field name="country_id" ref="base.fr"/>
+            <field name="parking">True</field>
+            <field name="type_property_id" ref="property_type_1"/>
+            <field name="type_building_id" ref="building_2"/>
+            <field name="type_room_id" ref="room_type_4"/>
+            <field name="estimated_value">800000.0</field>
+            <field name="status">available</field>
+            <field name="surface">180</field>
+            <field name="price">750000.0</field>
+            <field name="adress">Adresse Maison de Campagne</field>
+            <field name="is_pet_allowed">True</field>
+            <field name="has_elevator">False</field>
+            <field name="energy_rating">C</field>
+            <field name="heating_type">wood</field>
+            <field name="construction_year">1995</field>
+            <field name="number_of_floors">2</field>
+            <field name="has_pool">False</field>
+            <field name="has_terrace">True</field>
+            <field name="has_garden">True</field>
+            <field name="has_basement">True</field>
+            <field name="has_attic">True</field> 
+            <field name="living_room_area">50</field>
+            <field name="kitchen_area">30</field>
+            <field name="is_kitchen_equipped">True</field>
+            <field name="garden_area">200</field> 
+            <field name="main_floor_type">carpet</field> 
+            <field name="interior_finish">standard</field> 
+            <field name="exterior_finish">concrete</field>
+            <field name="window_quality">double</field>
+            <field name="thermal_insulation">good</field> 
+            <field name="flooring_finish">tiles</field>
+            <field name="is_furnished">True</field> 
+            <field name="photo" type="base64" file="immotechno_property/static/img/propertyfour.jpg"/>
+        </record>
+
+        <record id="property5" model="immotechno.property">
+            <field name="name">Kot étudiant</field>
+            <field name="street">Rue des Étudiants</field>
+            <field name="city">Lyon</field>
+            <field name="zip">69003</field>
+            <field name="country_id" ref="base.fr"/>
+            <field name="parking">False</field>
+            <field name="type_property_id" ref="property_type_3"/> 
+            <field name="type_building_id" ref="building_2"/>
+            <field name="estimated_value">300000.0</field>
+            <field name="status">available</field>
+            <field name="surface">25</field> 
+            <field name="price">55000.0</field>
+            <field name="is_pet_allowed">False</field>
+            <field name="has_elevator">True</field>
+            <field name="energy_rating">B</field>
+            <field name="heating_type">electric</field>
+            <field name="construction_year">2015</field>
+            <field name="number_of_floors">1</field>
+            <field name="has_pool">False</field>
+            <field name="has_terrace">False</field>
+            <field name="has_garden">False</field>
+            <field name="has_basement">False</field>
+            <field name="has_attic">False</field>
+            <field name="living_room_area">10</field>
+            <field name="kitchen_area">5</field> 
+            <field name="is_kitchen_equipped">True</field>
+            <field name="main_floor_type">tiles</field>
+            <field name="exterior_finish">concrete</field>
+            <field name="window_quality">double</field>
+            <field name="thermal_insulation">good</field>
+            <field name="is_furnished">True</field>
+            <field name="photo" type="base64" file="immotechno_property/static/img/propertyfive.jpg"/>
+        </record> 
+    </data>
+</odoo>

@@ -1,0 +1,193 @@
+<odoo>
+    <record id="quotation_template_sale" model="sale.order.template">
+        <field name="name">Sale Quotation</field>
+    </record>
+
+    <record id="quotation_template_rent_1_year" model="sale.order.template">
+        <field name="name">Rental One Year</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">12</field>
+    </record>
+
+    <record id="quotation_template_rent_2_years" model="sale.order.template">
+        <field name="name">Rental Two Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">24</field>
+    </record>
+
+    <record id="quotation_template_rent_3_years" model="sale.order.template">
+        <field name="name">Rental Three Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">36</field>
+    </record>
+
+    <record id="quotation_template_rent_4_years" model="sale.order.template">
+        <field name="name">Rental Four Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">48</field>
+    </record>
+
+    <record id="quotation_template_rent_5_years" model="sale.order.template">
+        <field name="name">Rental Five Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">60</field>
+    </record>
+
+    <record id="quotation_template_rent_6_years" model="sale.order.template">
+        <field name="name">Rental Six Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">72</field>
+    </record>
+
+    <record id="quotation_template_rent_7_years" model="sale.order.template">
+        <field name="name">Rental Seven Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">84</field>
+    </record>
+
+    <record id="quotation_template_rent_8_years" model="sale.order.template">
+        <field name="name">Rental Eight Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">96</field>
+    </record>
+
+    <record id="quotation_template_rent_9_years" model="sale.order.template">
+        <field name="name">Rental Nine Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">108</field>
+    </record>
+
+    <record id="quotation_template_rent_10_years" model="sale.order.template">
+        <field name="name">Rental Ten Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">120</field>
+    </record>
+
+    <record id="quotation_template_rent_11_years" model="sale.order.template">
+        <field name="name">Rental Eleven Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">132</field>
+    </record>
+
+    <record id="quotation_template_rent_12_years" model="sale.order.template">
+        <field name="name">Rental Twelve Years</field>
+        <field name="plan_id" ref="subscription_plan_one_year"/>
+        <field name="is_unlimited">False</field>
+        <field name="duration_value">144</field>
+    </record>
+
+    <record id="quotation_template_line_sale" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_sale"/>
+        <field name="product_id" ref="product_sale"/>
+        <field name="name">Sale Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field> 
+    </record>
+
+    <record id="quotation_template_line_rent_1_year" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_1_year"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_2_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_2_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_3_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_3_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_4_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_4_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_5_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_5_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_6_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_6_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+    
+    <record id="quotation_template_line_rent_7_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_7_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_8_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_8_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_9_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_9_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="quotation_template_line_rent_10_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_10_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+    
+    <record id="quotation_template_line_rent_11_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_11_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+    
+    <record id="quotation_template_line_rent_12_years" model="sale.order.template.line">
+        <field name="sale_order_template_id" ref="quotation_template_rent_12_years"/>
+        <field name="product_id" ref="product_rent"/>
+        <field name="name">Rental Product</field>
+        <field name="product_uom_qty">1</field>
+        <field name="sequence">10</field>
+    </record>
+</odoo>

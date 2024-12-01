@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="room_type_0" model="room.type">
+            <field name="name">Kitchen</field>
+        </record>
+
+        <record id="room_type_1" model="room.type">
+            <field name="name">Bedroom</field>
+        </record>
+
+        <record id="room_type_2" model="room.type">
+            <field name="name">Bathroom</field>
+        </record>
+
+        <record id="room_type_3" model="room.type">
+            <field name="name">Living Room</field>
+        </record>
+
+        <record id="room_type_4" model="room.type">
+            <field name="name">Office</field>
+        </record>
+
+        <record id="room_type_5" model="room.type">
+            <field name="name">Dining Room</field>
+        </record>
+
+        <record id="room_type_6" model="room.type">
+            <field name="name">Warehouse</field>
+        </record>
+    </data>
+</odoo>

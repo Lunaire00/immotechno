@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="immotechno_subscription_menu" 
+                  name="Abonnements" 
+                  web_icon="immotechno_sales,static/description/icon.png"
+                  sequence="1"/>
+    </data>
+</odoo>

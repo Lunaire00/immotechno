@@ -1,0 +1,24 @@
+<odoo>
+    <record id="subscription_plan_one_year" model="sale.subscription.plan">
+        <field name="name">Monthly</field>
+        <field name="billing_period_value">1</field>
+        <field name="billing_period_unit">month</field>
+        <field name="user_closable">True</field>
+        <field name="user_quantity">True</field>
+    </record>
+
+    <record id="product_rent" model="product.product">
+        <field name="name">Rent</field>
+        <field name="recurring_invoice">True</field>
+        <field name="type">service</field>
+        <field name="list_price">0.0</field>
+        <field name="invoice_policy">order</field>
+    </record>
+
+    <record id="product_sale" model="product.product">
+        <field name="name">Sale</field>
+        <field name="type">service</field>
+        <field name="list_price">0.0</field>
+        <field name="invoice_policy">order</field>
+    </record>
+</odoo>

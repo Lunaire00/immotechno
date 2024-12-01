@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_building_tree" model="ir.ui.view">
+            <field name="name">building.tree</field>
+            <field name="model">building</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="estimated_value" />
+                    <field name="property_ids" widget="many2many_tags" />
+                    <field name="rented_ratio" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_building_form" model="ir.ui.view">
+            <field name="name">building.form</field>
+            <field name="model">building</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="smart" invisible="1" />
+                        <div class="d-flex justify-content-between">
+                            <div style="flex: 1 1 70%;">
+                                <div class="oe_title mb24">
+                                    <h1>
+                                        <field name="name" options="{'line_breaks': False}"
+                                            widget="text" default_focus="1"
+                                            placeholder="Building One" />
+                                    </h1>
+                                </div>
+                                <group>
+                                    <group string="Characteristics">
+                                        <span class="o_form_label o_td_label" name="address_name">
+                                            <b>Address</b>
+                                        </span>
+                                        <div class="o_address_format">
+                                            <field name="street" placeholder="Street..."
+                                                class="o_address_street" />
+                                            <field name="city" placeholder="City"
+                                                class="o_address_city" />
+                                            <field name="zip" placeholder="ZIP"
+                                                class="o_address_zip" />
+                                            <field name="state_id" class="o_address_state"
+                                                placeholder="State"
+                                                options="{'no_open': True, 'no_quick_create': True}" />
+                                            <div name="partner_address_country"
+                                                class="d-flex justify-content-between">
+                                                <field name="country_id" placeholder="Country"
+                                                    class="o_address_country"
+                                                    options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" />
+                                            </div>
+                                        </div>
+                                        <field name='property_ids' widget="many2many_tags" />
+                                        <field name='number_of_floor' />
+                                        <field name='area' />
+                                    </group>
+                                    <group string="Secondary features">
+                                        <field name="elevator_installed" widget="boolean_toggle" />
+                                        <field name="construction_date" widget="boolean_toogle" />
+                                    </group>
+                                </group>
+                            </div>
+                            <div>
+                                <field name="image" widget="image"
+                                    options="{'preview_image': 'image'}"
+                                    style="max-width:150px; max-height: 150px;" />
+                            </div>
+                            <div class="oe_chatter">
+                                <field name="message_follower_ids" widget="mail_followers"
+                                    groups="base.group_user"
+                                    options="{'post_refresh': 'recipients'}" />
+                                <field name="activity_ids" />
+                                <field name="message_ids" widget="mail_thread" />
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_building_kanban" model="ir.ui.view">
+            <field name="name">immo.view.kanban</field>
+            <field name="model">building</field>
+            <field name="arch" type="xml">
+                <kanban class="o_event_kanban_view" sample="1">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click card">
+                                <div
+                                    class="oe_kanban_details d-flex align-items-center justify-content-between w-100">
+                                    <strong class="tag-name mr-2">
+                                        <field name="name" />
+                                    </strong>
+                                    <span class="badge badge-secondary"
+                                        t-att-title="'This indicates the ratio of rented properties to total properties in this building.'">
+                                        <strong>
+                                            <field name="rented_ratio" />
+                                        </strong>
+                                    </span>
+                                </div>
+                                <div class="oe_kanban_avatar mt-3"
+                                    style="width: 100%; height: 150px; overflow: hidden; border-radius: 8px;">
+                                    <field name="image" widget="image" class="oe_avatar"
+                                        options="{'preview_image': 'image'}"
+                                        style="object-fit: cover; width: 100%; height: 100%;" />
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="building_search_view" model="ir.ui.view">
+            <field name="name">Building.search</field>
+            <field name="model">building</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="address" />
+                </search>
+            </field>
+        </record>
+
+        <record id="action_building" model="ir.actions.act_window">
+            <field name="name">Building</field>
+            <field name="res_model">building</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem id="building_id"
+            name="Building"
+            action="action_building"
+            parent="immotechno_menu"
+            sequence="4" />
+    </data>
+</odoo>

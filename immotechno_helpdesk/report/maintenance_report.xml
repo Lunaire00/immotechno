@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="maintenance_report_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <t t-foreach="docs" t-as="doc">
+                        <center>
+                            <h2>Maintenance Report</h2>
+                        </center>
+                        <div style="text-align:left">
+                            <strong>
+                                <p>Name :
+                                    <span t-field="doc.name"/>
+                                </p>
+                            </strong>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th>Equipment</th>
+                                    <th>Request Date</th>
+                                    <th>Team</th>
+                                    <th>Responsible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc" t-as="line">
+                                    <td>
+                                        <span t-field="line.equipment_id"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.request_date"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.maintenance_team_id"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.user_id"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <strong>
+                            <p>Notes :
+                                <br/>
+                                <span t-field="doc.description"/>
+                            </p>
+                        </strong>
+                        <br/>
+                        <br/>
+                        <strong>
+                            <p>Instructions :
+                                <br/>
+                                <span t-field="doc.instruction_text"/>
+                            </p>
+                        </strong>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="text-align: left">
+                                <strong>
+                                    <p>Maintenance Team:
+                                        <br/>
+                                        <span t-field="doc.maintenance_team_id"/>
+                                    </p>
+                                </strong>
+                            </div>
+                            <div style="text-align: right">
+                                <strong>
+                                    <p>Tenant:
+                                        <br/>
+                                        <span t-field="doc.user_id"/>
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="maintenance_report_pdf" model="ir.actions.report">
+            <field name="name">Maintenance Report</field>
+            <field name="model">maintenance.request</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">immotechno_helpdesk.maintenance_report_template</field>
+            <field name="print_report_name">'Maintenance %s' %(object.name)</field>
+            <field name="binding_model_id" ref="maintenance.model_maintenance_request"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

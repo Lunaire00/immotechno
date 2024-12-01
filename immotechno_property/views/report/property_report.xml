@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="property_report_template">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <h2 style="text-align: center;">
+                        <span t-field="docs[0].name" />
+                    </h2>
+                    <table class="table table-condensed">
+                        <tr>
+                            <td>
+                                <strong>Type d'immobilier</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].business_or_residential" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>City</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].city" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Construction Year</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].construction_year"
+                                    t-if="docs[0].construction_year" />
+                                <span t-esc="docs[0].construction_year"
+                                    t-if="not docs[0].construction_year">N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Country</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].country_id.name" t-if="docs[0].country_id" />
+                                <span t-esc="docs[0].country_id.name" t-if="not docs[0].country_id">
+                                    N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Energy Rating</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].energy_rating" t-if="docs[0].energy_rating" />
+                                <span t-esc="docs[0].energy_rating" t-if="not docs[0].energy_rating">
+                                    N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Disability Access</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].disability_access"
+                                    t-if="docs[0].disability_access" />
+                                <span t-esc="docs[0].disability_access"
+                                    t-if="not docs[0].disability_access">N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Garden Area</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].garden_area" t-if="docs[0].garden_area" />
+                                <span t-esc="docs[0].garden_area" t-if="not docs[0].garden_area">N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Number of Bedroom</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].number_of_bedrooms_id" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Number of Bathroom</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].number_of_bathrooms_id" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Elevator</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].has_elevator" t-if="docs[0].has_elevator" />
+                                <span t-esc="docs[0].has_elevator" t-if="not docs[0].has_elevator">
+                                    N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Has Pool</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].has_pool" t-if="docs[0].has_pool" />
+                                <span t-esc="docs[0].has_pool" t-if="not docs[0].has_pool">N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Has Terrace</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].has_terrace" t-if="docs[0].has_terrace" />
+                                <span t-esc="docs[0].has_terrace" t-if="not docs[0].has_terrace">N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Heating</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].heating_type" t-if="docs[0].heating_type" />
+                                <span t-esc="docs[0].heating_type" t-if="not docs[0].heating_type">
+                                    N/A</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Living Room Area</strong>
+                            </td>
+                            <td>
+                                <span t-field="docs[0].living_room_area"
+                                    t-if="docs[0].living_room_area" />
+                                <span t-esc="docs[0].living_room_area"
+                                    t-if="not docs[0].living_room_area">N/A</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </t>
+        </template>
+
+        <record id="property_report_pdf" model="ir.actions.report">
+            <field name="name">Property Report</field>
+            <field name="model">immotechno.property</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">immotechno_property.property_report_template</field>
+            <field name="binding_model_id" ref="model_immotechno_property" />
+        </record>
+    </data>
+</odoo>

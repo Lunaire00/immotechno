@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Computer 1 -->
+        <record id="equipment_computer_1" model="maintenance.equipment">
+            <field name="name">Laptop Dell XPS 15</field>
+            <field name="property_id" ref="immotechno_property.property1" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_computer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-01</field>
+            <field name="scrap_date">2027-11-01</field>
+            <field name="location">Office 101</field>
+        </record>
+
+        <!-- Computer 2 -->
+        <record id="equipment_computer_2" model="maintenance.equipment">
+            <field name="name">Desktop HP Elite</field>
+            <field name="property_id" ref="immotechno_property.property2" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_computer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-05</field>
+            <field name="scrap_date">2026-11-05</field>
+            <field name="location">Office 102</field>
+        </record>
+
+        <!-- Software 1 -->
+        <record id="equipment_software_1" model="maintenance.equipment">
+            <field name="name">Microsoft Office 365</field>
+            <field name="property_id" ref="immotechno_property.property3" />
+            <field name="is_building">False</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_software" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-10-20</field>
+            <field name="scrap_date">2026-10-20</field>
+            <field name="location">Digital Assets</field>
+        </record>
+
+        <!-- Printer 1 -->
+        <record id="equipment_printer_1" model="maintenance.equipment">
+            <field name="name">HP LaserJet Pro MFP</field>
+            <field name="property_id" ref="immotechno_property.property4" />
+            <field name="building_id" ref="immotechno_property.building_0" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_printer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-09-15</field>
+            <field name="scrap_date">2026-09-15</field>
+            <field name="location">Floor 2</field>
+        </record>
+
+        <!-- Printer 2 -->
+        <record id="equipment_printer_2" model="maintenance.equipment">
+            <field name="name">Canon Pixma G6020</field>
+            <field name="property_id" ref="immotechno_property.property5" />
+            <field name="is_building">False</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_printer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-10-10</field>
+            <field name="scrap_date">2026-10-10</field>
+            <field name="location">Digital Assets</field>
+        </record>
+
+        <!-- Monitor 1 -->
+        <record id="equipment_monitor_1" model="maintenance.equipment">
+            <field name="name">Samsung Curved Monitor</field>
+            <field name="property_id" ref="immotechno_property.property1" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_computer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-10</field>
+            <field name="scrap_date">2027-11-10</field>
+            <field name="location">Meeting Room</field>
+        </record>
+
+        <!-- Monitor 2 -->
+        <record id="equipment_monitor_2" model="maintenance.equipment">
+            <field name="name">LG UltraWide Monitor</field>
+            <field name="property_id" ref="immotechno_property.property2" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_computer" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-15</field>
+            <field name="scrap_date">2026-11-15</field>
+            <field name="location">Main Office</field>
+        </record>
+
+        <!-- Phone 1 -->
+        <record id="equipment_phone_1" model="maintenance.equipment">
+            <field name="name">iPhone 13</field>
+            <field name="property_id" ref="immotechno_property.property3" />
+            <field name="is_building">True</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_phone" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-20</field>
+            <field name="scrap_date">2025-11-20</field>
+            <field name="location">Employee's Desk</field>
+        </record>
+
+        <!-- Phone 2 -->
+        <record id="equipment_phone_2" model="maintenance.equipment">
+            <field name="name">Samsung Galaxy S22</field>
+            <field name="property_id" ref="immotechno_property.property4" />
+            <field name="is_building">False</field>
+            <!-- <field name="category_id" ref="maintenance.equipment_phone" /> -->
+            <field name="technician_user_id" ref="base.user_admin" />
+            <field name="assign_date">2024-11-25</field>
+            <field name="scrap_date">2026-11-25</field>
+            <field name="location">Mobile Assets</field>
+        </record>
+    </data>
+</odoo>

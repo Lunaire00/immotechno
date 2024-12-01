@@ -1,0 +1,1393 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* immotechno_property
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-22 14:27+0000\n"
+"PO-Revision-Date: 2024-11-22 14:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__renovation_date_end
+msgid " End Renovation Date"
+msgstr "Date de Fin Renovation"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__renovation_date_start
+msgid " Start Renovation Date"
+msgstr "Date de Début Renovation"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_kanban
+msgid ""
+"<i class=\"fa fa-bath\" aria-hidden=\"true\" style=\"margin-right: 5px;\" "
+"title=\"Bathroom\"/>"
+msgstr ""
+"<i class=\"fa fa-bath\" aria-hidden=\"true\" style=\"margin-right: 5px;\" "
+"title=\"Salle de Bain\"/>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_kanban
+msgid ""
+"<i class=\"fa fa-bed\" aria-hidden=\"true\" style=\"margin-right: 5px;\" "
+"title=\"Bedroom\"/>"
+msgstr ""
+"<i class=\"fa fa-bed\" aria-hidden=\"true\" style=\"margin-right: 5px;\" "
+"title=\"Chambre\"/>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_kanban
+msgid ""
+"<i class=\"fa fa-car\" aria-hidden=\"true\" style=\"margin-right: 5px;\" "
+"title=\"Warehouse\"/>"
+msgstr ""
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                            <b>Address</b>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                            <b>Adresse</b>\n"
+"                                        </span>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>City</strong>"
+msgstr "<strong>Ville</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Construction Year</strong>"
+msgstr "<strong>Année de construction</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Country</strong>"
+msgstr "<strong>Pays</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Disability Access</strong>"
+msgstr "<strong>Accessibilité handicapé</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Elevator</strong>"
+msgstr "<strong>Ascenseur</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Energy Rating</strong>"
+msgstr "<strong>Classe énergétique</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Garden Area</strong>"
+msgstr "<strong>Surface du jardin</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Has Pool</strong>"
+msgstr "<strong>Possède une piscine</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Has Terrace</strong>"
+msgstr "<strong>Possède une terrasse</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Heating</strong>"
+msgstr "<strong>Chauffage</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Living Room Area</strong>"
+msgstr "<strong>Surface du salon</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Number of Bathroom</strong>"
+msgstr "<strong>Nombre de salles de bain</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Number of Bedroom</strong>"
+msgstr "<strong>Nombre de chambres</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "<strong>Type d'immobilier</strong>"
+msgstr "<strong>Type d'immobilier</strong>"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Accessibility and Proximity"
+msgstr "Accessibilité et Proximité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_needaction
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_exception_decoration
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Décoration d'exception d'activité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_state
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_state
+msgid "Activity State"
+msgstr "État de l'activité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_type_icon
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône du type d'activité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__notes
+msgid "Additional Notes"
+msgstr "Notes Additionnelles"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__address
+msgid "Address"
+msgstr "Adresse"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__adress
+msgid "Adress"
+msgstr "Adresse"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__air_conditioning
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Air Conditioning"
+msgstr "Air Conditionné"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Amenities and Facilities"
+msgstr "Équipements et installations"
+
+#. module: immotechno_property
+#: model:immotechno.property.type,name:immotechno_property.property_type_1
+msgid "Apartment"
+msgstr "Appartement"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__area
+msgid "Area (m²)"
+msgstr "Superficie"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_immo_renovation_history__facture_ids
+msgid "Attach facture for this renovation"
+msgstr "Joindre la facture pour cette rénovation"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__plan_ids
+msgid "Attach plans for this property"
+msgstr "Joindre les plans de cette propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_attachment_count
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__status__available
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Available"
+msgstr "Disponible"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__thermal_insulation__average
+msgid "Average"
+msgstr "Moyenne"
+
+#. module: immotechno_property
+#: model:room.type,name:immotechno_property.room_type_2
+msgid "Bathroom"
+msgstr "Salle de Bain"
+
+#. module: immotechno_property
+#: model:room.type,name:immotechno_property.room_type_1
+msgid "Bedroom"
+msgstr "Chambre"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__exterior_finish__brick
+msgid "Brick"
+msgstr "Brique"
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.action_building
+#: model:ir.model,name:immotechno_property.model_building
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__type_building_id
+#: model:ir.ui.menu,name:immotechno_property.building_id
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Building"
+msgstr "Immeuble"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "Building One"
+msgstr "Nom du l'Immeuble"
+
+#. module: immotechno_property
+#: model:immotechno.business.type,name:immotechno_property.business_type_4
+msgid "Building land"
+msgstr "Terrain à Bâtir"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__business_or_residential__business
+msgid "Business"
+msgstr "Entreprise"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__business_or_residential
+msgid "Business Or Residential"
+msgstr "Entreprise ou Résidentiel"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.type_of_business_menu_config_root
+msgid "Business Type"
+msgstr "Type d'Entreprise"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__flooring_finish__carpet
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__main_floor_type__carpet
+msgid "Carpet"
+msgstr "Moquette"
+
+#. module: immotechno_property
+#: model:immotechno.property.type,name:immotechno_property.property_type_4
+msgid "Castle"
+msgstr "Château"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "Characteristics"
+msgstr "Caractéristiques"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__city
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__city
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "City"
+msgstr "Ville"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__exterior_finish__concrete
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__flooring_finish__concrete
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__main_floor_type__concrete
+msgid "Concrete"
+msgstr "Béton"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.immotechno_configuration_menu
+msgid "Configuration"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__construction_date
+msgid "Construction Date"
+msgstr "Date de Construction"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__construction_year
+msgid "Construction Year"
+msgstr "Année de Construction"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__country_id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__country_id
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "Country"
+msgstr "Pays"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__create_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__create_date
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: immotechno_property
+#: model:room.type,name:immotechno_property.room_type_5
+msgid "Dining Room"
+msgstr "Salle à Manger"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__disability_access
+msgid "Disability Access"
+msgstr "Accès aux Personnes Handicapées"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__display_name
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__display_name
+msgid "Display Name"
+msgstr "Nom Complet"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__public_transport_distance
+msgid "Distance to Public Transport (km)"
+msgstr "Distance des transports en commun (km)"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__window_quality__double
+msgid "Double Glazing"
+msgstr "Double Vitrage"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__orientation__east
+msgid "East"
+msgstr "Est"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__heating_type__electric
+msgid "Electric"
+msgstr "Electrique"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_elevator
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Elevator Available"
+msgstr "Ascenseur Disponible"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__elevator_installed
+msgid "Elevator Installed"
+msgstr "Ascenseur Installé"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__energy_rating
+msgid "Energy Rating"
+msgstr "Classe Energétique"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Environmental"
+msgstr "Environnemental"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__is_furnished_price
+msgid "Equipement Price"
+msgstr "Prix de l'Equipement"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__estimated_value
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__estimated_value
+msgid "Estimated Value"
+msgstr "Valeur Estimée"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__exterior_finish
+msgid "Exterior Finish"
+msgstr "Finition Extérieure"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__facture_ids
+msgid "Facture"
+msgstr ""
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Finishes and Floor Types"
+msgstr "Finitions et Types de Sols"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__flooring_finish
+msgid "Flooring Finish"
+msgstr "Finition du Plancher"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_follower_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_partner_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__activity_type_icon
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icône Font Awesome, par exemple fa-tasks"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__status__for_sale
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "For Sale"
+msgstr "En Vente"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__is_furnished
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Furnished"
+msgstr "Est Meublé"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__guarantor_ids
+msgid "Garantor"
+msgstr "Garant"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__garden_area
+msgid "Garden Area (m²)"
+msgstr "Superficie du Jardin(m²)"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__heating_type__gas
+msgid "Gas"
+msgstr "Gaz"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "General Features"
+msgstr "Caractéristiques Générales"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__thermal_insulation__good
+msgid "Good"
+msgstr "Bonne"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Group by Building Type"
+msgstr "Grouper par type de bâtiment"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Group by Country"
+msgstr "Grouper par pays"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Group by Energy Rating"
+msgstr "Grouper par classement énergétique"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Group by Property Type"
+msgstr "Grouper par type de propriété"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Group by Status"
+msgstr "Grouper par statut"
+
+#. module: immotechno_property
+#: model:immotechno.partner.type,name:immotechno_property.res_partner_type_3
+msgid "Guarantors"
+msgstr "Garant"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_attic
+msgid "Has Attic"
+msgstr "Grenier"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_basement
+msgid "Has Basement"
+msgstr "Sous-Sol"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_garden
+msgid "Has Garden"
+msgstr "Jardin"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__has_message
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_message
+msgid "Has Message"
+msgstr "Message"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_pool
+msgid "Has Pool"
+msgstr "Piscine"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__has_terrace
+msgid "Has Terrace"
+msgstr "Terrasse"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__heating_type
+msgid "Heating Type"
+msgstr "Type de Chauffage"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_res_config_settings__is_hide_icon_kanban
+msgid "Hide Number Rooms Icons"
+msgstr "Masquer les icônes du nombre de pièces"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_res_config_settings__is_hide_icon_kanban
+msgid "Hide the coin icons"
+msgstr "Masquer les icônes des pièces"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.res_config_settings_view_form_property
+msgid "Hide the home type logos on the Kanban view"
+msgstr "Masquer les logos des types de maison dans la vue Kanban"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "High Energy Rating (A or B)"
+msgstr "Classe énergétique  (A ou B)"
+
+#. module: immotechno_property
+#: model:immotechno.property.type,name:immotechno_property.property_type_0
+msgid "House"
+msgstr "Maison"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "House One"
+msgstr "Nom de la Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__id
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__id
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__id
+msgid "ID"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_exception_icon
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__activity_exception_icon
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône pour indiquer une activité d'exception."
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__message_needaction
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+"Si cette option est cochée, les nouveaux messages nécessitent votre "
+"attention."
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__message_has_error
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de livraison"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__image
+msgid "Image"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.immotechno_menu
+#: model_terms:ir.ui.view,arch_db:immotechno_property.res_config_settings_view_form_property
+msgid "Immobilier"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.action_immotechno_settings
+msgid "Immotechno Settings"
+msgstr "Paramètres Immotechno"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.res_config_settings_view_form_property
+msgid "Interface"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__interior_finish
+msgid "Interior Finish"
+msgstr "Finition Intérieure"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_is_follower
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_is_follower
+msgid "Is Follower"
+msgstr "Follower"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__is_hide_rooms
+msgid "Is Hide Rooms"
+msgstr "Cacher les Pièces"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__is_kitchen_equipped
+msgid "Is Kitchen Equipped"
+msgstr "Cuisine Equipée"
+
+#. module: immotechno_property
+#: model:room.type,name:immotechno_property.room_type_0
+msgid "Kitchen"
+msgstr "Cuisine"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__kitchen_area
+msgid "Kitchen Area (m²)"
+msgstr "Superficie de la Cuisine (mÂ²)"
+
+#. module: immotechno_property
+#: model:immotechno.property.type,name:immotechno_property.property_type_2
+msgid "Kot"
+msgstr ""
+
+#. module: immotechno_property
+#: model:immotechno.partner.type,name:immotechno_property.res_partner_type_2
+msgid "Landlord"
+msgstr "Propirétaire"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__write_uid
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__write_date
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: immotechno_property
+#: model:room.type,name:immotechno_property.room_type_3
+msgid "Living Room"
+msgstr "Salon"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__living_room_area
+msgid "Living Room Area (m²)"
+msgstr "Superficie du Salon (m²)"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__interior_finish__luxury
+msgid "Luxury"
+msgstr "Luxueux"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Luxury Interior"
+msgstr "Intérieur de Luxe"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__main_floor_type
+msgid "Main Floor Type"
+msgstr "Type de Sol"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_has_error
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison du Message"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__my_activity_date_deadline
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Date limite de mon activité"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.property_report_template
+msgid "N/A"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_energy_type__name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_partner_type__name
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__name
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__name
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Name"
+msgstr "Nom"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_date_deadline
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Date limite de la prochaine activité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_summary
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de l'activité suivante"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_type_id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type d'activité suivant"
+
+#. module: immotechno_property
+#: model_terms:ir.actions.act_window,help:immotechno_property.action_immotecho_partner_type
+msgid "No partner type found. Let's create one !"
+msgstr "Aucun type de partenaire trouvé. Créons-en un !"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__orientation__north
+msgid "North"
+msgstr "Nord"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_needaction_counter
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numéros des Actions"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Number of Bathroom"
+msgstr "Nombre de Salles de Bain"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__number_of_bathrooms_id
+msgid "Number of Bathrooms"
+msgstr "Nombre de Salle de Bain"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Number of Bedroom"
+msgstr "Nombre de Chambres"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__number_of_bedrooms_id
+msgid "Number of Bedrooms"
+msgstr "Nombre de Chambres"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__number_of_floors
+msgid "Number of Floors"
+msgstr "Nombre d'Etages"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__number_of_warehouses_id
+msgid "Number of Warehouses"
+msgstr "Nombre de Garages"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__message_has_error_counter
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'Erreurs"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__number_of_floor
+msgid "Number of floors"
+msgstr "Nombre d'Etages"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__message_needaction_counter
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__message_has_error_counter
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__type_room_id
+msgid "Number of rooms"
+msgstr "Nombre de Pièces"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__capacity
+msgid "Occupancy Capacity"
+msgstr "Capacité d'Occupation"
+
+#. module: immotechno_property
+#: model:immotechno.business.type,name:immotechno_property.business_type_0
+#: model:room.type,name:immotechno_property.room_type_4
+msgid "Office"
+msgstr "Bureau"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__heating_type__oil
+msgid "Oil"
+msgstr "Pétrole"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__orientation
+msgid "Orientation"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__exterior_finish__other
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__flooring_finish__other
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__heating_type__other
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__main_floor_type__other
+msgid "Other"
+msgstr "Autre"
+
+#. module: immotechno_property
+#: model:immotechno.business.type,name:immotechno_property.business_type_3
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__parking
+msgid "Parking"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__flooring_finish__parquet
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__main_floor_type__parquet
+msgid "Parquet"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.action_immotecho_partner_type
+#: model:ir.model,name:immotechno_property.model_immotechno_partner_type
+#: model:ir.model.fields,field_description:immotechno_property.field_res_partner__partner_type_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_res_users__partner_type_ids
+msgid "Partner Type"
+msgstr "Type de Partenaire"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.immotechno_partner_type_options
+msgid "Partner Types"
+msgstr "Types de Partenaires"
+
+#. module: immotechno_property
+#: model:immotechno.partner.type,name:immotechno_property.res_partner_type_1
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__payer_id
+msgid "Payer"
+msgstr "Payeur"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__is_pet_allowed
+msgid "Pets Allowed"
+msgstr "Animaux de Compagnie Permis"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__photo
+msgid "Photo"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__plan_ids
+msgid "Plans"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__thermal_insulation__poor
+msgid "Poor"
+msgstr "Mauvaise"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__interior_finish__premium
+msgid "Premium"
+msgstr ""
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Premium Interior"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__property_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Properties"
+msgstr "Propriétés"
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.property_action_view
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__property_id
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__property_id
+#: model:ir.ui.menu,name:immotechno_property.immotechno_menu_root
+msgid "Property"
+msgstr "Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__property_owner_ids
+msgid "Property Owners"
+msgstr "Propriétaires"
+
+#. module: immotechno_property
+#: model:ir.actions.report,name:immotechno_property.property_report_pdf
+msgid "Property Report"
+msgstr "Rapport de Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__property_status
+msgid "Property Status"
+msgstr "Statut de Propriété"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.type_of_property_menu_config_root
+msgid "Property Type"
+msgstr "Type de Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__proximity_to_schools
+msgid "Proximity to Schools (km)"
+msgstr "Proximité des écoles (km)"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__proximity_to_shops
+msgid "Proximity to Shops (km)"
+msgstr "Proximité des commerces (km)"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__quantity
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__rating_ids
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__rating_ids
+msgid "Ratings"
+msgstr "Estimation"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_room_type_view_tree
+msgid "Real estate"
+msgstr "Immobilier"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Renewable Energy"
+msgstr "Énergie renouvelable"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__renewable_energy_sources
+msgid "Renewable Energy Sources"
+msgstr "Energies Renouvelables"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_immo_renovation_history
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__renovation_history_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Renovation History"
+msgstr "Historique de la Rénovation"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__renovation_name
+msgid "Renovation Name"
+msgstr "Nom de la Rénovation"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immo_renovation_history__renovation_price
+msgid "Renovation Price (EUR)"
+msgstr "Prix de la Rénovation (EUR)"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__status__rented
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "Rented"
+msgstr "Louer"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__business_or_residential__residential
+msgid "Residential"
+msgstr "Résidentiel"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__activity_user_id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur Responsable"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__room_entry_ids
+msgid "Room Entries"
+msgstr "Entrées de Salle"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.room_type_menu_config_root
+msgid "Room Type"
+msgstr "Type de Pièce"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_room_type_entry
+msgid "Room Type Entry"
+msgstr "Type de Pièce"
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.room_type_action
+msgid "Room type"
+msgstr "Type de pièce"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Rooms"
+msgstr "Pièces"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "Secondary features"
+msgstr "Caractéristiques Secondaires"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Select room"
+msgstr "Sélectionnez une Pièce"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__price
+msgid "Selling Price"
+msgstr "Prix de Vente"
+
+#. module: immotechno_property
+#. odoo-python
+#: code:addons/immotechno_property/models/immotechno_room_type.py:0
+#: model:ir.model.fields,field_description:immotechno_property.field_building__sequence
+#, python-format
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: immotechno_property
+#: model:ir.ui.menu,name:immotechno_property.menu_immotechno_settings
+msgid "Settings"
+msgstr "Paramètres"
+
+#. module: immotechno_property
+#: model:immotechno.business.type,name:immotechno_property.business_type_1
+msgid "Shop"
+msgstr "Magasin"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__show_price
+msgid "Show Price"
+msgstr "Afficher le Prix"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__window_quality__single
+msgid "Single Glazing"
+msgstr "Simple Vitrage"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__smart
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__smart
+msgid "Smart"
+msgstr "Intelligent"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__orientation__south
+msgid "South"
+msgstr "Sud"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+msgid "Stakeholders"
+msgstr "Intervenants"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__interior_finish__standard
+msgid "Standard"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__state_id
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__state_id
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "State"
+msgstr "Etat"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__status
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Status"
+msgstr "Statut"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__activity_state
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__street
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__street
+msgid "Street"
+msgstr "Rue"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "Street..."
+msgstr "Rue..."
+
+#. module: immotechno_property
+#: model:immotechno.property.type,name:immotechno_property.property_type_3
+msgid "Studio"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__surface
+msgid "Surface Area (m²)"
+msgstr "Surface (m²)"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Surface(m²)"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type__sequence
+msgid "Séquence"
+msgstr ""
+
+#. module: immotechno_property
+#: model:immotechno.partner.type,name:immotechno_property.res_partner_type_0
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__tenant_ids
+msgid "Tenant"
+msgstr "Locataire"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__thermal_insulation
+msgid "Thermal Insulation"
+msgstr "Isolation Thermique"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__flooring_finish__tiles
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__main_floor_type__tiles
+msgid "Tiles"
+msgstr "Carrelage"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__total_bathrooms
+msgid "Total Bathrooms"
+msgstr "Total de salle de bain"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__total_rooms
+msgid "Total Rooms"
+msgstr "Total de Chambres"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__total_warehouses
+msgid "Total Warehouse"
+msgstr "Total des Entrepôt"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__window_quality__triple
+msgid "Triple Glazing"
+msgstr "Triple Vitrage"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_tree
+msgid "Type of Property"
+msgstr "Type de Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_room_type_entry__room_id
+msgid "Type of Room"
+msgstr "Type de Pièce"
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.immotechno_property_type_business_action
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__type_business_id
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_type_of_business_view_tree
+msgid "Type of business"
+msgstr "Type d'Entreprise"
+
+#. module: immotechno_property
+#: model:ir.actions.act_window,name:immotechno_property.immotechno_property_type_action
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__type_property_id
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_type_of_property_view_tree
+msgid "Type of property"
+msgstr "Type de Propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,help:immotechno_property.field_building__activity_exception_decoration
+#: model:ir.model.fields,help:immotechno_property.field_immotechno_property__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité d'exception sur le registre."
+
+#. module: immotechno_property
+#: model:immotechno.business.type,name:immotechno_property.business_type_2
+#: model:room.type,name:immotechno_property.room_type_6
+msgid "Warehouse"
+msgstr "Entrepôt"
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__orientation__west
+msgid "West"
+msgstr "Ouest"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__window_quality
+msgid "Window Quality"
+msgstr "Qualité des Fenêtres"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "With Garden"
+msgstr ""
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_property_search
+msgid "With Pool"
+msgstr ""
+
+#. module: immotechno_property
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__exterior_finish__wood
+#: model:ir.model.fields.selection,name:immotechno_property.selection__immotechno_property__heating_type__wood
+msgid "Wood"
+msgstr "Bois"
+
+#. module: immotechno_property
+#: model_terms:ir.ui.view,arch_db:immotechno_property.immotechno_view_form
+#: model_terms:ir.ui.view,arch_db:immotechno_property.view_building_form
+msgid "ZIP"
+msgstr "C.P"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_building__zip
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__zip
+msgid "Zip code"
+msgstr "Code Postal"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property__active
+msgid "active"
+msgstr "Actif"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_business_type__color
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__color
+msgid "color"
+msgstr "Couleur"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_immotechno_business_type
+msgid "immotechno commercial type"
+msgstr "immotechno type de commerces"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_immotechno_energy_type
+msgid "immotechno energy type"
+msgstr "immotechno type d'énergie"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_immotechno_property
+msgid "immotechno.property"
+msgstr "immotechno.propriété"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_immotechno_property_type
+msgid "immotechno.property.type"
+msgstr "immotechno.type.de.propriété"
+
+#. module: immotechno_property
+#: model:ir.model.fields,field_description:immotechno_property.field_immotechno_property_type__name
+msgid "name"
+msgstr "Nom"
+
+#. module: immotechno_property
+#: model:ir.model,name:immotechno_property.model_room_type
+msgid "room.type"
+msgstr "type.de.pièce"

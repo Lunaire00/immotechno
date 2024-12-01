@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="building_0" model="building">
+        <field name="name">Skyline Tower</field>
+        <field name="street">123 Main Street</field>
+        <field name="city">New York</field>
+        <field name="zip">10001</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="construction_date">2005-08-15</field>
+        <field name="area">1500</field>
+        <field name="elevator_installed">True</field>
+        <field name="estimated_value">2500000</field>
+        <field name="number_of_floor">10</field>
+        <field name="notes">Prime location in downtown Manhattan.</field>
+        <field name="image" type="base64" file="immotechno_property/static/img/skyline_tower.jpg"/>
+        <field name="sequence">1</field>
+        <field name="smart">Smart Building Enabled</field>
+    </record>
+    
+    <record id="building_1" model="building">
+        <field name="name">Greenfield Apartments</field>
+        <field name="street">456 Elm Avenue</field>
+        <field name="city">Los Angeles</field>
+        <field name="zip">90001</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="construction_date">2010-05-10</field>
+        <field name="area">1200</field>
+        <field name="elevator_installed">False</field>
+        <field name="estimated_value">1800000</field>
+        <field name="number_of_floor">8</field>
+        <field name="notes">Eco-friendly building with solar panels.</field>
+        <field name="image" type="base64" file="immotechno_property/static/img/greenfield_apartments.jpg"/>
+        <field name="sequence">2</field>
+        <field name="smart">Partially Automated</field>
+    </record>
+
+    <record id="building_2" model="building">
+        <field name="name">Sunset Villas</field>
+        <field name="street">789 Ocean Drive</field>
+        <field name="city">Miami</field>
+        <field name="zip">33101</field>
+        <field name="country_id" ref="base.us"/>
+        <field name="construction_date">2015-09-20</field>
+        <field name="area">2000</field>
+        <field name="elevator_installed">True</field>
+        <field name="estimated_value">3200000</field>
+        <field name="number_of_floor">12</field>
+        <field name="notes">Luxury seaside apartments with private pools.</field>
+        <field name="image" type="base64" file="immotechno_property/static/img/sunset_villas.jpg"/>
+        <field name="sequence">3</field>
+        <field name="smart">Fully Smart System</field>
+    </record>
+</odoo>

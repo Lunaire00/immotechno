@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_helpdesk_ticket_to_maintenance,access_helpdesk_ticket_to_maintenance,immotechno_helpdesk.model_helpdesk_ticket_to_maintenance,base.group_user,1,1,1,1
+access_equipment_technician,equipment.technician,model_maintenance_equipment,immotechno_helpdesk.technician_group,1,0,0,0
+access_equipment_manager,equipment.manager,model_maintenance_equipment,immotechno_helpdesk.manager_group,1,1,1,1

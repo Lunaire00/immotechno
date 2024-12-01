@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="immotechno_menu"
+            name="Immobilier"
+            web_icon="immotechno_property,static/description/icon.png"
+            groups="base.group_user"
+            sequence="1" />
+
+        <menuitem id="immotechno_configuration_menu"
+            name="Configuration"
+            parent="immotechno_menu"
+            groups="base.group_user"
+            sequence="99" />
+    </data>
+</odoo>

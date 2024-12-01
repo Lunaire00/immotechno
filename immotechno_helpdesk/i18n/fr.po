@@ -1,0 +1,369 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* immotechno_helpdesk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-22 11:40+0000\n"
+"PO-Revision-Date: 2024-11-22 11:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: immotechno_helpdesk
+#: model:ir.actions.report,print_report_name:immotechno_helpdesk.maintenance_report_pdf
+msgid "'Maintenance %s' %(object.name)"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__action_maintenance
+msgid "Action Maintenance"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:res.groups,name:immotechno_helpdesk.manager_group
+msgid "Administrator Maintenance"
+msgstr "Administrateur Maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model,name:immotechno_helpdesk.model_building
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__building_id
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.view_building_form_inherit
+msgid "Building"
+msgstr "Immeuble"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.helpdesk_ticket_to_maintenance_view_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_printer_2
+msgid "Canon Pixma G6020"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#. odoo-python
+#: code:addons/immotechno_helpdesk/models/helpdesk_ticket.py:0
+#: model:ir.model,name:immotechno_helpdesk.model_helpdesk_ticket_to_maintenance
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.helpdesk_ticket_to_maintenance_view_form
+#, python-format
+msgid "Convert Ticket to Maintenance"
+msgstr "Convertir le ticket en maintenance"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.helpdesk_ticket_view_form_inherit
+msgid "Convert to Maintenance"
+msgstr "Convertir en maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_building__building_count
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_immotechno_property__equipment_count
+msgid "Count"
+msgstr "Nombre"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_immotechno_property__maintenance_count
+msgid "Count of Maintenances"
+msgstr "Nombre de maintenances"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.helpdesk_ticket_to_maintenance_view_form
+msgid "Create Maintenance"
+msgstr "Créer une maintenance"
+
+#. module: immotechno_helpdesk
+#. odoo-python
+#: code:addons/immotechno_helpdesk/wizard/helpdesk_ticket_to_maintenance.py:0
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__action_maintenance__create
+#, python-format
+msgid "Create a new Maintenance"
+msgstr "Créer une nouvelle maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_computer_2
+msgid "Desktop HP Elite"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_immotechno_property__equipment_ids
+msgid "Equipements"
+msgstr "Equipements"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket__equipment_id
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.view_property_form_inherit
+msgid "Equipment"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#. odoo-python
+#: code:addons/immotechno_helpdesk/models/immotechno_building.py:0
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_building__building_ids
+#, python-format
+msgid "Equipments"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_printer_1
+msgid "HP LaserJet Pro MFP"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.ui.menu,name:immotechno_helpdesk.immotechno_helpdesk_menu_root
+msgid "Help"
+msgstr "Aide"
+
+#. module: immotechno_helpdesk
+#: model:ir.model,name:immotechno_helpdesk.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Ticket d'assistance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__priority__3
+msgid "High"
+msgstr "Élevé"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__id
+msgid "ID"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__is_building
+msgid "In building"
+msgstr "Dans un bâtiment"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid ""
+"Instructions :\n"
+"                                <br/>"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_form_inherit
+msgid "Is a Building"
+msgstr "Est un bâtiment"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_monitor_2
+msgid "LG UltraWide Monitor"
+msgstr "Moniteur LG UltraWide"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_computer_1
+msgid "Laptop Dell XPS 15"
+msgstr "Ordinateur portable Dell XPS 15"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: immotechno_helpdesk
+#. odoo-python
+#: code:addons/immotechno_helpdesk/wizard/helpdesk_ticket_to_maintenance.py:0
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__action_maintenance__exist
+#, python-format
+msgid "Link the Ticket to a Maintenance"
+msgstr "Lier le ticket à une maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__priority__1
+msgid "Low"
+msgstr "Faible"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket__maintenance_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__maintenance_id
+#: model:ir.module.category,name:immotechno_helpdesk.maintenance_security
+msgid "Maintenance"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model,name:immotechno_helpdesk.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "Equipement de maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.module.category,description:immotechno_helpdesk.maintenance_security
+msgid "Maintenance Groups"
+msgstr "Groupes de Maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.actions.report,name:immotechno_helpdesk.maintenance_report_pdf
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid "Maintenance Report"
+msgstr "Rapport de Maintenance"
+
+#. module: immotechno_helpdesk
+#: model:ir.model,name:immotechno_helpdesk.model_maintenance_request
+msgid "Maintenance Request"
+msgstr "Demande de Maintenance"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid ""
+"Maintenance Team:\n"
+"                                        <br/>"
+msgstr  ""
+"Equipe de Maintenance:\n"
+"                                        <br/>"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.view_property_form_inherit
+msgid "Maintenances"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_software_1
+msgid "Microsoft Office 365"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid "Name :"
+msgstr "Nom :"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__priority__2
+msgid "Normal"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid ""
+"Notes :\n"
+"                                <br/>"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__priority
+msgid "Priority"
+msgstr "Priorité"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket__property_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__property_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_request__property_maintenance_id
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_kanban_inherit
+msgid "Property"
+msgstr "Propriété"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__rel_type_building_id
+msgid "Rel Type Of Building"
+msgstr "Type de relation avec le bâtiment"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid "Request Date"
+msgstr "Date de Demande"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_monitor_1
+msgid "Samsung Curved Monitor"
+msgstr "Moniteur incurvé Samsung"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_phone_2
+msgid "Samsung Galaxy S22"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid "Team"
+msgstr "Équipe"
+
+#. module: immotechno_helpdesk
+#: model:res.groups,name:immotechno_helpdesk.technician_group
+msgid "Technician"
+msgstr "Technicien"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket__partner_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__partner_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__rel_tenant_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_form_inherit
+msgid "Tenant"
+msgstr "Client"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.maintenance_report_template
+msgid ""
+"Tenant:\n"
+"                                        <br/>"
+msgstr ""
+"Client:\n"
+"                                        <br/>"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.helpdesk_ticket_to_maintenance_view_form
+msgid "Ticket"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_helpdesk_ticket_to_maintenance__ticket_id
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_request__ticket_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.immotechno_hr_equipment_request_view_form_inherit
+msgid "Tickets"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields,field_description:immotechno_helpdesk.field_maintenance_equipment__rel_type_property_id
+msgid "Type of Property"
+msgstr "Type de Propriété"
+
+#. module: immotechno_helpdesk
+#: model_terms:ir.ui.view,arch_db:immotechno_helpdesk.hr_equipment_view_form_inherit
+msgid "Type of housing"
+msgstr "Type de Logement"
+
+#. module: immotechno_helpdesk
+#: model:ir.model.fields.selection,name:immotechno_helpdesk.selection__helpdesk_ticket_to_maintenance__priority__0
+msgid "Very Low"
+msgstr "Très Bas"
+
+#. module: immotechno_helpdesk
+#: model:maintenance.equipment,name:immotechno_helpdesk.equipment_phone_1
+msgid "iPhone 13"
+msgstr ""
+
+#. module: immotechno_helpdesk
+#: model:ir.model,name:immotechno_helpdesk.model_immotechno_property
+msgid "immotechno.property"
+msgstr "immotechno.propriété"

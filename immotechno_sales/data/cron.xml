@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record id='ir_cron_change_subscription_state' model='ir.cron'>
+            <field name='name'>Change subscription state</field>
+            <field name='model_id' ref='immotechno_sales.model_sale_order'/>
+            <field name='state'>code</field>
+            <field name='code'>model.change_on_subscription_state_cron()</field>
+            <field name="user_id" ref="base.group_user"/>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>hours</field>
+            <field name='numbercall'>-1</field>
+        </record>
+    </data>
+    <data>
+        <record id='ir_cron_archive_house' model='ir.cron'>
+            <field name='name'>Archive house after sale</field>
+            <field name='model_id' ref='immotechno_sales.model_sale_order'/>
+            <field name='state'>code</field>
+            <field name='code'>model.archive_house_sale_order()</field>
+            <field name="user_id" ref="base.group_user"/>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>days</field>
+            <field name='numbercall'>-1</field>
+        </record>
+    </data>
+</odoo>

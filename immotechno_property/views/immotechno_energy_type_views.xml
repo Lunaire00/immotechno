@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="immotechno_property_energy_type_view_tree" model="ir.ui.view">
+            <field name="name">Energy Types</field>
+            <field name="model">immotechno.energy.type</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_immotechno_property_energy_type" model="ir.actions.act_window">
+            <field name="name">Energy Types</field>
+            <field name="res_model">immotechno.energy.type</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No energy type type found. Let's create one !
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="immotechno_property_energy_type_options"
+        name="Energy Types"
+        action="action_immotechno_property_energy_type"
+        groups="base.group_user"
+        sequence="1" 
+        parent="immotechno_configuration_menu" />
+    </data>
+</odoo>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Property Search View-->
+        <record id="view_property_search" model="ir.ui.view">
+            <field name="name">property.search</field>
+            <field name="model">immotechno.property</field>
+            <field name="arch" type="xml">
+                <search>
+                    <!-- Simple fiters-->
+                    <filter name="filter_available" string="Available"
+                        domain="[('status', '=', 'available')]" />
+                    <filter name="filter_rented" string="Rented"
+                        domain="[('status', '=', 'rented')]" />
+                    <filter name="filter_for_sale" string="For Sale"
+                        domain="[('status', '=', 'for_sale')]" />
+                    <filter name="filter_garden" string="With Garden"
+                        domain="[('has_garden', '=', True)]" />
+                    <filter name="filter_pool" string="With Pool" domain="[('has_pool', '=', True)]" />
+                    <filter name="filter_air_conditioning" string="Air Conditioning"
+                        domain="[('air_conditioning', '=', True)]" />
+                    <filter name="filter_furnished" string="Furnished"
+                        domain="[('is_furnished', '=', True)]" />
+                    <filter name="filter_elevator" string="Elevator Available"
+                        domain="[('has_elevator', '=', True)]" />
+                    <filter name="filter_renewable_energy" string="Renewable Energy"
+                        domain="[('renewable_energy_sources', '=', True)]" />
+
+                    <!-- Complex filters -->
+                    <filter name="filter_premium" string="Premium Interior"
+                        domain="[('interior_finish', '=', 'premium')]" />
+                    <filter name="filter_luxury" string="Luxury Interior"
+                        domain="[('interior_finish', '=', 'luxury')]" />
+                    <filter name="filter_high_energy_rating" string="High Energy Rating (A or B)"
+                        domain="[('energy_rating', 'in', ['A', 'B'])]" />
+
+                    <!-- Groups -->
+                    <group>
+                        <filter name="group_by_status" string="Group by Status"
+                            context="{'group_by': 'status'}" />
+                        <filter name="group_by_building" string="Group by Building Type"
+                            context="{'group_by': 'type_building_id'}" />
+                        <filter name="group_by_property" string="Group by Property Type"
+                            context="{'group_by': 'type_property_id'}" />
+                        <filter name="group_by_country" string="Group by Country"
+                            context="{'group_by': 'country_id'}" />
+                        <filter name="group_by_energy" string="Group by Energy Rating"
+                            context="{'group_by': 'energy_rating'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Property Form View-->
+        <record id="immotechno_view_form" model="ir.ui.view">
+            <field name="name">immo.form</field>
+            <field name="model">immotechno.property</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <div>
+                            <field name="status" widget="statusbar" options="{'clickable': True}" />
+                        </div>
+                    </header>
+                    <sheet>
+                        <field name="smart" invisible="1" />
+                        <div class="oe_button_box" name="button_box">
+                        </div>
+                        <div class="d-flex justify-content-start mb16">
+                            <div style="flex: 1 1 70%;">
+                                <div class="oe_title mb24">
+                                    <h1>
+                                        <field name="name" options="{'line_breaks': False}"
+                                            widget="text"
+                                            default_focus="1" placeholder="House One" />
+                                    </h1>
+                                </div>
+                                <div>
+                                    <div>
+                                        <field name="business_or_residential"
+                                            widget="radio"
+                                            options="{'horizontal': true}" />
+                                    </div>
+                                </div>
+                                <group>
+                                    <group string="Characteristics">
+                                        <span class="o_form_label o_td_label" name="address_name">
+                                            <b>Address</b>
+                                        </span>
+                                        <div class="o_address_format">
+                                            <field name="street" placeholder="Street..."
+                                                class="o_address_street" />
+                                            <field name="city" placeholder="City"
+                                                class="o_address_city" />
+                                            <field name="zip" placeholder="ZIP"
+                                                class="o_address_zip" />
+                                            <field name="state_id" class="o_address_state"
+                                                placeholder="State"
+                                                options="{'no_open': True, 'no_quick_create': True}" />
+                                            <div name="partner_address_country"
+                                                class="d-flex justify-content-between">
+                                                <field name="country_id" placeholder="Country"
+                                                    class="o_address_country"
+                                                    options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" />
+                                            </div>
+                                        </div>
+                                        <field name="type_property_id"
+                                            options="{'reload_on_change': True}"
+                                            invisible="business_or_residential != 'residential'" />
+                                        <field name="type_business_id"
+                                            options="{'reload_on_change': True}"
+                                            invisible="business_or_residential != 'business'" />
+                                        <field name="type_building_id" />
+                                    </group>
+                                    <group string="Stakeholders">
+                                        <field name="payer_id" />
+                                        <field name="property_owner_ids" widget="many2many_tags" />
+                                        <field name="tenant_ids" widget="many2many_tags" />
+                                        <field name="guarantor_ids" widget="many2many_tags" />
+                                    </group>
+                                </group>
+                            </div>
+                            <div>
+                                <field name="photo" widget="image"
+                                    options="{'preview_image': 'photo'}"
+                                    style="max-width:150px; max-height: 150px;" />
+                            </div>
+                        </div>
+                        <group>
+                            <field name="estimated_value" />
+                            <field name="surface" default="None" />
+                        </group>
+                        <notebook>
+                            <page string="General Features">
+                                <group>
+                                    <field name="heating_type" />
+                                    <field name="main_floor_type" />
+                                    <field name="construction_year" />
+                                    <field name="number_of_floors" />
+                                    <field name="orientation" />
+                                    <field name="is_furnished" widget="boolean_toggle" />
+                                    <field name="is_furnished_price" invisible="not is_furnished" />
+                                    <field name="parking" widget="boolean_toggle" />
+                                    <field name="is_pet_allowed" widget="boolean_toggle" />
+                                </group>
+                            </page>
+                            <page string="Amenities and Facilities">
+                                <group>
+                                    <field name="has_pool" widget="boolean_toggle" />
+                                    <field name="has_terrace" widget="boolean_toggle" />
+                                    <field name="has_garden" widget="boolean_toggle" />
+                                    <field name="garden_area" invisible="not has_garden" />
+                                    <field name="has_basement" widget="boolean_toggle" />
+                                    <field name="has_attic" widget="boolean_toggle" />
+                                    <field name="air_conditioning" widget="boolean_toggle" />
+                                </group>
+                            </page>
+                            <page string="Environmental">
+                                <group>
+                                    <field name="renewable_energy_sources" widget="boolean_toggle" />
+                                    <field name="energy_rating" />
+                                    <field name="thermal_insulation" />
+                                </group>
+                            </page>
+                            <page string="Accessibility and Proximity">
+                                <group>
+                                    <field name="disability_access" widget="boolean_toggle" />
+                                    <field name="has_elevator" widget="boolean_toggle" />
+                                    <field name="public_transport_distance" />
+                                    <field name="proximity_to_schools" />
+                                    <field name="proximity_to_shops" />
+                                </group>
+                            </page>
+                            <page string="Rooms">
+                                <field name="room_entry_ids">
+                                    <tree editable="bottom">
+                                        <field name="room_id" class="o_input o_field_widget"
+                                            placeholder="Select room" />
+                                        <field name="quantity" class="o_input o_field_widget"
+                                            placeholder="Quantity" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Finishes and Floor Types">
+                                <group>
+                                    <field name="interior_finish" />
+                                    <field name="exterior_finish" />
+                                    <field name="window_quality" />
+                                </group>
+                            </page>
+                            <page string="Renovation History">
+                                <field name="renovation_history_ids">
+                                    <tree editable="bottom">
+                                        <field name="renovation_name" />
+                                        <field name="renovation_date_start" />
+                                        <field name="renovation_date_end" />
+                                        <field name="renovation_price" />
+                                        <field name="facture_ids" widget="many2many_binary"
+                                            options="{'no_create_edit': True}" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"
+                            groups="base.group_user"
+                            options="{'post_refresh': 'recipients'}" />
+                        <field name="activity_ids" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="immotechno_view_kanban" model="ir.ui.view">
+            <field name="name">immo.view.kanban</field>
+            <field name="model">immotechno.property</field>
+            <field name="arch" type="xml">
+                <kanban class="o_event_kanban_view" sample="1">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click card">
+                                <div class="oe_kanban_details d-flex align-items-center"
+                                    style="display: flex; justify-content: space-between; width: 100%;">
+                                    <!-- Name and Activity side by side -->
+                                    <div style="display: flex; align-items: center;">
+                                        <strong class="tag-name mr8">
+                                            <field name="name" />
+                                        </strong>
+                                        <div class="o_kanban_inline_block ml4 mr4">
+                                            <field name="activity_ids" widget="kanban_activity" />
+                                        </div>
+                                    </div>
+                                    <!-- Status field -->
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="margin-right: 15px;">
+                                            <field name="status"
+                                                widget="label_selection"
+                                                options="{'classes':{'available':'success','rented':'warning','for_sale':'info'}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Image field -->
+                                <div class="oe_kanban_avatar mt16"
+                                    style="width: 100%; height: 150px; overflow: hidden; border-radius: 8px;">
+                                    <field name="photo" widget="image" class="oe_avatar"
+                                        options="{'preview_image': 'photo'}"
+                                        style="object-fit: cover; width: 100%; height: 100%;" />
+                                </div>
+                                <!-- Property details -->
+                                <div class="property_details mt8"
+                                    style="display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 5px 0; hidden; border-radius: 8px">
+                                    <div invisible="total_rooms == 0 or is_hide_rooms == True"
+                                        style="display: flex; align-items: center; margin-right: 10px;">
+                                        <i class="fa fa-bed" aria-hidden="true" style="margin-right: 5px;" title="Bedroom"></i>
+                                        <field name="total_rooms" />
+                                    </div>
+                                    <div invisible="total_bathrooms == 0 or is_hide_rooms == True"
+                                        style="display: flex; align-items: center; margin-right: 10px;">
+                                        <i class="fa fa-bath" aria-hidden="true" style="margin-right: 5px;" title="Bathroom"></i>
+                                        <field name="total_bathrooms" />
+                                    </div>
+                                    <div invisible="total_warehouses == 0 or is_hide_rooms == True"
+                                        style="display: flex; align-items: center; margin-right: 10px;">
+                                        <i class="fa fa-car" aria-hidden="true" style="margin-right: 5px;" title="Warehouse"></i>
+                                        <field name="total_warehouses" />
+                                    </div>
+                                    <field name="is_hide_rooms" invisible='True' />
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <!-- Property Tree View-->
+        <record id="immotechno_view_tree" model="ir.ui.view">
+            <field name="name">immo.tree</field>
+            <field name="model">immotechno.property</field>
+            <field name="arch" type="xml">
+                <tree string="Properties">
+                    <field name="name" string="Name" />
+                    <field name="type_property_id" string="Type of Property" />
+                    <field name="type_building_id" string="Building" />
+                    <field name="status" string="Status" widget="badge"
+                        decoration-success="status == 'available'"
+                        decoration-warning="status == 'rented'"
+                        decoration-info="status == 'for_sale'" />
+                    <field name="total_bathrooms" string="Number of Bathroom" />
+                    <field name="total_rooms" string="Number of Bedroom" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Immotechno action -->
+        <record id="property_action_view" model="ir.actions.act_window">
+            <field name="name">Property</field>
+            <field name="res_model">immotechno.property</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <!-- Main menu Property -->
+        <menuitem id="immotechno_menu_root"
+            name="Property"
+            parent="immotechno_menu"
+            action="property_action_view"
+            sequence="1" />
+    </data>
+</odoo>

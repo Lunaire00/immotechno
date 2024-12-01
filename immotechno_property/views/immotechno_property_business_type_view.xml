@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record id="immotechno_type_of_business_view_tree" model="ir.ui.view">
+            <field name="name">immotechno.property.type.business.view.tree</field>
+            <field name="model">immotechno.business.type</field>
+            <field name="arch" type="xml">
+                <tree string="Type of business" editable="bottom">
+                    <field name="name" />
+                    <field name="color" widget="color_picker" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="immotechno_property_type_business_action">
+            <field name="name">Business Type</field>
+            <field name="res_model">immotechno.business.type</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem id="type_of_business_menu_config_root"
+            name="Business Type"
+            parent="immotechno_configuration_menu"
+            action="immotechno_property_type_business_action"
+            sequence="5" />
+    </data>
+</odoo>

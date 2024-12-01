@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- View sale.order form -->
+    <record id="view_sale_order_form" model="ir.ui.view">
+        <field name="name">view.sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="before">
+                <field name="status_id" widget="radio" options="{'horizontal': true}" required="True"/>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="property_id"  required="True"/>
+                <field name="property_address" readonly="1"/>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="string">Customer / Payer</attribute>
+            </xpath>
+            <xpath expr="//field[@name='show_update_pricelist']" position="after">
+                <field name="property_owner_ids" widget="many2many_tags" readonly="True"/>
+                <field name="tenant_ids" widget="many2many_tags" invisible="status_id == 'for_sale'"/>
+                <field name="guarantor_ids" widget="many2many_tags" invisible="status_id == 'for_sale'"/>
+            </xpath>
+            <xpath expr="//field[@name='payment_term_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='validity_date']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='plan_id']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//page[@name='customer_signature']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//page[@name='other_information']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//page[@name='customer_signature']" position="after">
+                <page string="Offers">
+                    <field name="offer_ids">
+                        <tree editable="bottom">
+                            <field name="name"/>
+                            <field name="price"/>
+                            <field name="offer_date"/>
+                            <field name="down_payment"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+            <xpath expr="//notebook/page[@name='optional_products']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//label[@name='plan_label']" position="attributes">
+                <attribute name="invisible"> status_id == 'for_sale'</attribute>
+            </xpath>
+            <xpath expr="//div[@name='plan_block']" position="attributes">
+                <attribute name="invisible"> status_id == 'for_sale'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='sale_order_template_id']" position="attributes">
+                <attribute name="invisible"> status_id == 'for_sale'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='product_template_id']" position="attributes">
+                <attribute name="readonly">%(product_sale)d or %(product_rent)d</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- View sale.order tree -->
+    <record id="view_sale_order_tree" model="ir.ui.view">
+        <field name="name">view.sale.order.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position = 'after'>
+                <field name="property_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- View sale.order.quotation tree-->
+    <record id="view_sale_quotation_tree" model="ir.ui.view">
+        <field name="name">view.sale.quotation.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position = 'before'>
+                <field name="property_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_sale_order_immo_form" model="ir.ui.view">
+        <field name="name">view.sale.order.subscription.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale_subscription.sale_subscription_primary_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='sale_order_template_id']" position="attributes">
+                <attribute name="invisible"> status_id == 'for_sale'</attribute>
+            </xpath>
+        </field>
+    </record>
+ </odoo>
+ 

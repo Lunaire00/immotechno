@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="equipment_tree_view_inherit" model="ir.ui.view">
+            <field name="name">equipment.tree.view.inherit</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='owner_user_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_equipment_view_form_inherit" model="ir.ui.view">
+            <field name="name">equipment.form.inherit</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='owner_user_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='owner_user_id']" position="replace">
+                    <field name="property_id" string="Property" invisible="is_building"/>
+                    <field name="is_building" string="Is a Building" widget="boolean_toggle"/>
+                    <field name="building_id" string="Building" invisible="not is_building"/>
+                    <field name="rel_type_property_id" string="Type of housing" invisible="is_building"/>
+                    <field name="rel_type_building_id" string="Building"
+                           invisible="rel_type_property_id != %(immotechno_property.property_type_1)d"/>
+                    <field name="rel_tenant_ids" string="Tenant" widget="many2many_tags" invisible="is_building"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_equipment_view_kanban_inherit" model="ir.ui.view">
+            <field name="name">equipment.kanban.inherit</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('o_kanban_record_body')]" position="inside">
+                    <field name="property_id" string="Property"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="immotechno_hr_equipment_request_view_form_inherit" model="ir.ui.view">
+            <field name="name">immotechno.hr.equipment.request.view.form.inherit</field>
+            <field name="model">maintenance.request</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_ticket"
+                                type="object"
+                                class="oe_stat_button"
+                                icon="fa-ticket"
+                                invisible="ticket_count == False">
+                            <field name="ticket_count" string="Ticket" widget="statinfo"/>
+                        </button>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='owner_user_id']" position="before">
+                    <field name="ticket_ids" string="Tickets" invisible="True"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

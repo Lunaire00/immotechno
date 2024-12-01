@@ -1,0 +1,274 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* immotechno_sales
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-25 08:41+0000\n"
+"PO-Revision-Date: 2024-11-25 08:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: immotechno_sales
+#: model:ir.ui.menu,name:immotechno_sales.immotechno_subscription_menu
+msgid "Abonnements"
+msgstr ""
+
+#. module: immotechno_sales
+#: model:ir.actions.server,name:immotechno_sales.ir_cron_archive_house_ir_actions_server
+msgid "Archive house after sale"
+msgstr "Archiver la maison après la vente"
+
+#. module: immotechno_sales
+#: model:ir.actions.server,name:immotechno_sales.ir_cron_change_subscription_state_ir_actions_server
+msgid "Change subscription state"
+msgstr "Changer l'état de l'abonnement"
+
+#. module: immotechno_sales
+#: model:ir.model,name:immotechno_sales.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: immotechno_sales
+#: model_terms:ir.ui.view,arch_db:immotechno_sales.view_sale_order_form
+msgid "Customer / Payer"
+msgstr "Client / Payeur"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__display_name
+msgid "Display Name"
+msgstr "Nom d'Affichage"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__down_payment
+msgid "Down Payment"
+msgstr "Acompte"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_eight_years
+msgid "Eight Year"
+msgstr "Huit Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_eleven_years
+msgid "Eleven Year"
+msgstr "Onze Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_five_years
+msgid "Five Year"
+msgstr "Cinq Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_four_years
+msgid "Four Year"
+msgstr "Quatre Ans"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_immotechno_property__guarantor_ids
+msgid "Garantor"
+msgstr "Garant"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__guarantor_ids
+msgid "Guarantor"
+msgstr "Garant"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__id
+msgid "ID"
+msgstr ""
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__property_status_id
+msgid "Immotechno Property Status"
+msgstr "Immotechno Statut de la Propriété "
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_nine_years
+msgid "Nine Year"
+msgstr "Neuf Ans"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__offer_date
+msgid "Offer Date"
+msgstr "Date de l'Offre"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__name
+msgid "Offer Name"
+msgstr "Nom de l'Offre"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__price
+msgid "Offer Price"
+msgstr "Prix de l'Offre"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__offer_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_sales.view_sale_order_form
+msgid "Offers"
+msgstr "Offres"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_one_year
+msgid "One Year"
+msgstr "Un An"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_immotechno_property__payer_id
+msgid "Payer"
+msgstr "Client"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__property_id
+msgid "Property"
+msgstr "Propriété"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__property_address
+msgid "Property Address"
+msgstr "Adresse de la Propriété"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__property_owner_ids
+msgid "Property Owner"
+msgstr "Propriétaire"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__status_id
+msgid "Property Status"
+msgstr "Statut de la Propriété"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__sale_order_template_id
+msgid "Quotation Template"
+msgstr "Modèle de devis"
+
+#. module: immotechno_sales
+#: model:ir.model.fields.selection,name:immotechno_sales.selection__sale_order__status_id__for_rent
+#: model:product.template,name:immotechno_sales.product_rent_product_template
+msgid "Rent"
+msgstr "Loué"
+
+#. module: immotechno_sales
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_10_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_11_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_12_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_1_year
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_2_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_3_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_4_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_5_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_6_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_7_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_8_years
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_rent_9_years
+msgid "Rental Product"
+msgstr "Produit de Location"
+
+#. module: immotechno_sales
+#: model:ir.model.fields.selection,name:immotechno_sales.selection__sale_order__status_id__for_sale
+#: model:product.template,name:immotechno_sales.product_sale_product_template
+msgid "Sale"
+msgstr "En Vente"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_immotechno_property__sale_order_id
+#: model:ir.model.fields,field_description:immotechno_sales.field_property_offer__sale_order_id
+#: model_terms:ir.ui.view,arch_db:immotechno_sales.view_immotechno_property_form_button
+msgid "Sale Order"
+msgstr "Bon de Commande"
+
+#. module: immotechno_sales
+#: model:sale.order.template.line,name:immotechno_sales.quotation_template_line_sale
+msgid "Sale Product"
+msgstr "Produit à Vendre"
+
+#. module: immotechno_sales
+#: model:ir.model,name:immotechno_sales.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_seven_years
+msgid "Seven Year"
+msgstr "Sept Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_six_years
+msgid "Six Year"
+msgstr "Six Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_ten_years
+msgid "Ten Year"
+msgstr "Dix Ans"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_immotechno_property__tenant_ids
+#: model:ir.model.fields,field_description:immotechno_sales.field_sale_order__tenant_ids
+#: model_terms:ir.ui.view,arch_db:immotechno_sales.res_config_settings_sale_view_form_property
+msgid "Tenant"
+msgstr "Locataire"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_res_config_settings__is_tenant_garantor
+msgid "Le locataire est garant"
+msgstr ""
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_three_years
+msgid "Three Year"
+msgstr "Trois Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_twelve_years
+msgid "Twelve Year"
+msgstr "Douze Ans"
+
+#. module: immotechno_sales
+#: model:sale.subscription.plan,name:immotechno_sales.subscription_plan_two_years
+msgid "Two Year"
+msgstr "Deux Ans"
+
+#. module: immotechno_sales
+#: model:ir.model,name:immotechno_sales.model_immotechno_property
+msgid "immotechno.property"
+msgstr "immotechno.propriété"
+
+#. module: immotechno_sales
+#: model:ir.model,name:immotechno_sales.model_property_offer
+msgid "property.offer"
+msgstr "offre.immobilière"
+
+#. module: immotechno_sales
+#: model:ir.model.fields,field_description:immotechno_sales.field_immotechno_property__sale_count
+msgid "sale_count"
+msgstr "nombre_de_ventes"

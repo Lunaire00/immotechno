@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form_property" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.property</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="11" />
+            <field name="inherit_id" ref="base.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="inside">
+                    <app noapp="1" string="Immobilier" name="property_management"
+                        logo="/immotechno_property/static/description/icon.png">
+                        <block title="Interface" name="interface_setting_container">
+                            <setting id="interface_settings"
+                                help="Hide the home type logos on the Kanban view">
+                                <field name="is_hide_icon_kanban" />
+                            </setting>
+                        </block>
+                    </app>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_immotechno_settings" model="ir.actions.act_window">
+            <field name="name">Immotechno Settings</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+
+        <menuitem id="menu_immotechno_settings"
+            name="Settings"
+            parent="immotechno_configuration_menu"
+            action="action_immotechno_settings"
+            sequence="9" />
+    </data>
+</odoo>
